@@ -17,8 +17,6 @@ struct SignUpView: View {
     
     @EnvironmentObject var session: FirebaseSession
     
-    //@Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
     var body: some View {
         NavigationView {
             VStack(spacing: 30){
@@ -49,25 +47,6 @@ struct SignUpView: View {
                 .background(Color.init(UIColor.brown))
                 .cornerRadius(20)
                 
-//                NavigationLink(destination: MainView()) {
-//                    Text("SIGN UP")
-//                        .foregroundColor(Color.white)
-//                        .font(Font.custom("HelveticaNeue-Medium", size: 16))
-//                }
-//                .frame(width: 105.0, height: 45.0)
-//                .background(Color.init(UIColor.brown))
-//                .cornerRadius(20)
-                
-//                Button(action: {
-//                    self.presentationMode.wrappedValue.dismiss()
-//                }) {
-//                    Text("CANCEL")
-//                    .foregroundColor(Color.white)
-//                    .font(Font.custom("HelveticaNeue-Medium", size: 16))
-//                }
-//                .frame(width: 105.0, height: 45.0)
-//                .background(Color.init(UIColor.brown))
-//                .cornerRadius(20)
             }
         }
     }

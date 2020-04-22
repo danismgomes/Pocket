@@ -17,7 +17,6 @@ struct SignInView: View {
     @State private var password: String = ""
     
     private let AppLogoImageName = "PocketLogo"
-//    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     @EnvironmentObject var session: FirebaseSession
     
@@ -37,15 +36,6 @@ struct SignInView: View {
                         .padding(.horizontal, 45)
                         .font(Font.custom("Helvetica", size: 12))
                 }
-                
-//                NavigationLink(destination: MainView()) {
-//                    Text("SIGN IN")
-//                        .foregroundColor(Color.white)
-//                        .font(Font.custom("HelveticaNeue-Medium", size: 16))
-//                }
-//                .frame(width: 105.0, height: 45.0)
-//                .background(Color.init(UIColor.brown))
-//                .cornerRadius(20)
                 Button(action: logIn){
                     Text("SIGN IN")
                         .foregroundColor(Color.white)
@@ -54,17 +44,6 @@ struct SignInView: View {
                 .frame(width: 105.0, height: 45.0)
                 .background(Color.init(UIColor.brown))
                 .cornerRadius(20)
-                
-//                Button(action: {
-//                    self.presentationMode.wrappedValue.dismiss()
-//                }) {
-//                    Text("CANCEL")
-//                    .foregroundColor(Color.white)
-//                    .font(Font.custom("HelveticaNeue-Medium", size: 16))
-//                }
-//                .frame(width: 105.0, height: 45.0)
-//                .background(Color.init(UIColor.brown))
-//                .cornerRadius(20)
             }
         }
     }

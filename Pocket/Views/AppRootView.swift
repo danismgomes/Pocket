@@ -12,7 +12,6 @@ import FirebaseAuth
 
 struct AppRootView: View {
     
-    //@ObservedObject var user : UserController
     @ObservedObject var session : FirebaseSession
     
     func getUser () {

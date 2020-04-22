@@ -34,7 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                             accessToken: authentication.accessToken)
         let session = FirebaseSession()
-        //let userController = UserController()
         session.signInGoogle(authCredential: credential) { (res, err) in
             if err != nil {
                 print((err?.localizedDescription)!)

@@ -9,13 +9,7 @@
 import SwiftUI
 
 struct IncomePickerView: View {
-//    @State var incomeSelection = Transaction.IncomeOutcome.withdrawal
     @Binding var incomeSelection : Transaction.IncomeOutcome
-//
-//    init(incomeSelection: Binding<Transaction.IncomeOutcome>) {
-//        //UISegmentedControl.appearance().tintColor = UIColor.ligthBrownButtonBackgorund
-//        UISegmentedControl.appearance().setTitleTextAttributes([.font: UIFont(name: "HelveticaNeue-Medium", size: 16)!, .foregroundColor: UIColor.brown], for: .normal)
-//    }
 
     var body: some View {
         Picker(selection: $incomeSelection, label: Text("")) {
@@ -30,9 +24,3 @@ struct IncomePickerView: View {
         .padding()
     }
 }
-
-//struct IncomePickerView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        IncomePickerView()
-//    }
-//}

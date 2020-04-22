@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    //@State var user = UserController()
+    
     @EnvironmentObject var session: FirebaseSession
     
     var body: some View {

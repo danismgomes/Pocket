@@ -41,9 +41,6 @@ class FirebaseSession: ObservableObject {
     func logOut () {
         do {
             try Auth.auth().signOut().self
-//            if facebookAccessToken != nil {
-//                facebookLoginManager.logOut()
-//            }
             self.session = nil
             self.isLoggedIn = false
             print("Logged Out")

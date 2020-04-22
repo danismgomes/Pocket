@@ -9,12 +9,10 @@
 import SwiftUI
 
 struct CategoryButton: View {
-    //@ObservedObject var categoriesController = CategoriesController()
+    
     @State var category: Transaction.CategoryType
     @Binding var showCategories: Bool
     @Binding var categorySelected: Transaction.CategoryType
-    //@Binding var categoryClicked: Category?
-    
     
     var body: some View {
         Button(action: {

@@ -25,7 +25,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller.
         let session = FirebaseSession()
         let appRootView = AppRootView(session: session)
-//        let appView = AppRootView.environmentObject(userSession)
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
